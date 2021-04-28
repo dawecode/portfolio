@@ -9,4 +9,11 @@
   background-color:white;
   color:$grey;
   padding:5rem;
+
+
+  &__list {
+    display:flex;
+    border: 2px solid black;
+    padding:5rem;
+  }
 }

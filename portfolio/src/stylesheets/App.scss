@@ -13,10 +13,7 @@ $grey: #999;
 }
 
 .main {
-  // overflow:scroll;
-  // scroll-snap-type: y mandatory;
-  // scroll-snap-stop: always;
-  // height: 100vh;
+ 
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
