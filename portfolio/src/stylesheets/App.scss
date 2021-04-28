@@ -1,7 +1,28 @@
-@import "_Home"; 
+$grey: #999; 
 
-.App {
- 
-  height: 100vh;
+@import "_Home"; 
+@import "_About";
+@import "_Contact";
+@import "_Projects";
+@import "_Skills";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
+.main {
+  // overflow:scroll;
+  // scroll-snap-type: y mandatory;
+  // scroll-snap-stop: always;
+  // height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+}
+
+.child{
+  scroll-snap-align: start;
+}
