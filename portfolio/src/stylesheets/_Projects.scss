@@ -5,7 +5,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color:$grey;
   color:white;
+
+  &__list {
+   
+    display:flex;   
+    justify-content: space-evenly;
+    margin: 10px;
+    width: 70%;
+    line-height: 5rem;
+
+    div{ 
+      width:400px;
+      
+    }
+  }
 }
