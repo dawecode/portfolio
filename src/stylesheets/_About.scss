@@ -1,18 +1,17 @@
-.about{
-  font-family: 'Antic Slab', serif;
-  font-size: 3rem; 
+.about {
+  font-family: "Antic Slab", serif;
+  font-size: 3rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  color:white;
-  padding:5rem;
+  color: white;
+  padding: 5rem;
   background-color: $grey;
-  
-  p { 
+
+  p {
     line-height: 5rem;
-    font-size:2rem;
+    font-size: 2rem;
   }
 }
-

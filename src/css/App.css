@@ -25,8 +25,8 @@
 
 /* Main styles */
 .home {
-  font-family: 'Antic Slab', serif;
-  font-size: 4rem;
+  font-family: "Antic Slab", serif;
+  font-size: 3rem;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,18 +45,22 @@
   text-align: center;
   /* img size is 50x50 */
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-  -webkit-animation: bg-scrolling-reverse .92s infinite;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
   /* Safari 4+ */
   /* Fx 5+ */
   /* Opera 12+ */
-  animation: bg-scrolling-reverse .92s infinite;
+  animation: bg-scrolling-reverse 0.92s infinite;
   /* IE 10+ */
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 
+.home .logo {
+  font-size: 5rem;
+}
+
 .about {
-  font-family: 'Antic Slab', serif;
+  font-family: "Antic Slab", serif;
   font-size: 3rem;
   min-height: 100vh;
   display: -webkit-box;
@@ -66,12 +70,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: white;
   padding: 5rem;
   background-color: #999;
@@ -79,6 +83,7 @@
 
 .about p {
   line-height: 5rem;
+  font-size: 2rem;
 }
 
 .contact {
@@ -95,9 +100,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: #999;
   padding: 3rem;
 }
@@ -109,7 +114,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 25%;
+  width: 50%;
 }
 
 .contact__social-media-icons a {
@@ -131,15 +136,31 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #999;
   color: white;
 }
 
+.projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10px;
+  width: 70%;
+  line-height: 5rem;
+}
+
+.projects__list div {
+  width: 400px;
+}
+
 .skills {
-  font-family: 'Antic Slab', serif;
+  font-family: "Antic Slab", serif;
   font-size: 4rem;
   min-height: 100vh;
   display: -webkit-box;
@@ -149,15 +170,31 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: white;
   color: #999;
   padding: 5rem;
+}
+
+.skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10px;
+  width: 70%;
+  line-height: 3.5rem;
+}
+
+.skills__list h3 {
+  font-size: 2rem;
 }
 
 * {
